@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-image: url(background1.1.jpg);
+        background-size: cover;
+        color: white;
+        font-family: 'Poppins',sans-serif;
+    }
+    nav{
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img{
+        height: 75px;
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 12px;
+        left: 50px; 
+        box-shadow: 2px 1px 5px black;;
+    }
+    #text1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    #text{
+        color: #14AD75;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .text{
+        position: absolute;
+        top: 6px;
+        left: 150px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 50px;
+    }
+    li{
+        list-style: none;
+        text-decoration: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 50px;
+    }
+    nav ul li a:hover{
+        color: #14AD75;
+        font-size: 1.7rem;
+        text-decoration: underline color(srgb-linear, 0, 0, 225);
+    }
+    .content{
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        position: relative;
+    }
+    .para{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
+    .content h1{
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 10px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+    }
+    .content .btn1{
+        width: 160px;
+        height: 40px;
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    .content .btn1 a{
+        text-decoration: none;
+        color: #fff;
+        transition: 3s ease;
+        
+    }
+    .btn1:hover{
+        background-color: #14AD75;
+    }
+    .content span{
+        color: #14AD75;
+        font-size: 60px;
+    }
+    .form{
+        width: 250px;
+        height: 300px;
+        background: linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%);
+        position: absolute;
+        top: 30px;
+        left: 870px;
+        border-radius: 15px;
+        padding: 25px;
+    }
+    .form h2{
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 25px;
+        color: #14AD75;
+    }
+    .form input{
+        width: 240px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: transparent;
+        padding: 5px;
+        color: #fff;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .btn2{
+        width: 160px;
+        height: 40px;
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    .btn2 a{
+        text-decoration: none;
+        color: #fff;
+        transition: 3s ease;
+        
+    }
+    .btn2:hover{
+        background-color: #14AD75;
+    }
+    #register{
+        color: #14AD75;
+    }
+    #register:active{
+        color: blue;
+    }
+    #login{
+        margin-top: 10px;
+    }
+    .link{
+        text-align: center;
+    }</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="1.222.jpeg" alt="Logo">
+                <div class="text">
+                <h1 id="text1">Code</h1>
+                <h1 id="text"></h1>
+                </div>
+            </div>
+                <ul>
+                    <li><a href="">Home</li></a>
+                    <li><a href="">About</li></a>
+                    <li><a href="">Courses</li></a>
+                    <li><a href="">Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Web Design & <br><span>Development </span> <br>Course</h1>
+            <p class="para">Web development typically refers to the coding and programming side of website production. <br>
+                 When you learn web development, you might start out writing a simple page of <br>
+                  HTML text and build up to creating more complex, feature-rich applications designed to <br>
+                   be accessed from various Internet-connected devices. </p>
+                 
+                  <button class="btn1"> <a href="#">Join Us</a></button>
+                  <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" placeholder="Enter Email ">
+                    <input type="password" placeholder="Enter Password">
+                    <button class="btn2"> <a href="#">Login</a> </button>
+                    <p class="link">Don't have an account</p> <br>
+                    <a href="#" id="register">Register Here</a>
+                  </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typing=new Typed("#text", {
+            strings: ["FOR PROGRESS"],
+            typeSpeed: 80,
+            backSpeed: 40,
+            loop: true,
+        });
+     </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
